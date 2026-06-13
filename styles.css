@@ -1036,7 +1036,7 @@ body::before {
 /* ── Responsive ── */
 @media (max-width: 960px) {
   .wts-hero { grid-template-columns: 1fr; }
-  .wts-hero-img { min-height: 240px; }
+  .wts-hero-img { min-height: 220px; }
   .wts-hero-content { padding: 28px 24px; }
   .why-pillars-wrap { grid-template-columns: 1fr 1fr; gap: 14px; }
 }
@@ -1045,10 +1045,16 @@ body::before {
   .why-ribbon-item { min-width: 50%; border-bottom: 1px solid rgba(26,18,6,0.10); }
   .why-ribbon-sep { display: none; }
   .wts-duo { grid-template-columns: 1fr; }
-  .wts-tech-img { height: 160px; }
+  .wts-tech-img { height: 140px; }
   .why-pillars-wrap { grid-template-columns: 1fr; }
   .why-main-title { font-size: 24px; }
-  .wts-hero-img { min-height: 200px; }
+  .wts-hero-img { min-height: 180px; }
+}
+@media (max-width: 480px) {
+  .wts-hero-img { min-height: 150px; }
+  .wts-tech-img { height: 120px; }
+  .wts-hero-content { padding: 20px 16px; }
+  .wts-hero-num { font-size: 48px; }
 }
 
 /* ══════════════════
@@ -1736,6 +1742,16 @@ body::before {
   .hero-title { font-size: clamp(26px, 8vw, 38px); }
   .hero-desc  { font-size: 12.5px; max-width: 100%; }
   .hero-buttons { flex-direction: column; gap: 9px; }
+
+  .hero { min-height: auto; }
+  .hero-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .hero-right .social-sidebar { display: none; }
+  .hero-badge-float { animation: none; }
+  .hero-badge-float::before { display: none; }
 
   /* About — new layout mobile */
   .doctor-hero-card { grid-template-columns: 1fr; }
