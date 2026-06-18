@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { passive: true });
 
   /* ─── 8. STAGGER CARDS ─── */
-  document.querySelectorAll('.svc-card, .why-card, .t-card').forEach((card, i) => {
+  document.querySelectorAll('.svc-card, .why-pillar, .t-card').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.07}s`;
   });
 
